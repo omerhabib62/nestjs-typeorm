@@ -1,0 +1,4 @@
+https://dev.to/smpnjn/how-the-typescript-partial-type-works-2klj
+
+https://www.youtube.com/watch?v=9MGKKJTwicM&t=15s
+Onto relations - 29 Feb 24
