@@ -1,16 +1,10 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { AbstractEntity } from 'src/database/abstract.entity';
+import { Column, Entity } from 'typeorm';
 @Entity({ name: 'listings' })
-export class Listing {
-  @PrimaryGeneratedColumn()
-  id: number;
-
+export class Listing extends AbstractEntity<Listing> {
   @Column()
   description: string;
 
   @Column()
   rating: number;
-
-  constructor(listing: Partial<Listing>) {
-    Object.assign(this, listing);
-  }
 }
