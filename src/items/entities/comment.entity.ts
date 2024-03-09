@@ -1,5 +1,5 @@
 import { Column, Entity, ManyToOne } from 'typeorm';
-import { AbstractEntity } from '../../database/abstract.entity';
+import { AbstractEntity } from './../../database/abstract.entity';
 import { Item } from './item.entity';
 
 @Entity({ name: 'comments' })

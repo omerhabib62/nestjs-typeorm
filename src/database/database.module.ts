@@ -23,7 +23,7 @@ import { ConfigService } from '@nestjs/config';
         password: configService.get('DB_PASSWORD'),
         database: configService.get('DB_NAME'),
         autoLoadEntities: configService.get('DB_AUTOLOADENTITIES'),
-        synchronize: configService.get('DB_NAME'),
+        synchronize: configService.get('DB_SYNCHRONIZE'),
       }),
       inject: [ConfigService],
     }),
